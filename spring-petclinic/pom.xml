@@ -25,13 +25,29 @@
 		<module>petclinic-web</module>
 		<module>petclinic-data</module>
 	</modules>
-
-	<!-- <build>
+	
+	<build>
 		<plugins>
-			<plugin>
+			<!-- <plugin>
 				<groupId>org.springframework.boot</groupId>
 				<artifactId>spring-boot-maven-plugin</artifactId>
+			</plugin> -->
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-release-plugin</artifactId>
+				<configuration>
+					<goals>install</goals>
+					<autoVersionSubmodules>true</autoVersionSubmodules>
+					<checkModificationExcludes>
+				        <checkModificationExclude>pom.xml</checkModificationExclude>
+				    </checkModificationExcludes>
+				</configuration>
 			</plugin>
 		</plugins>
-	</build> -->
+	</build>
+	
+	<scm>
+		<developerConnection>scm:git:git@github.com:rsandeepm2512/spring-petclinic.git</developerConnection>
+	</scm>
+	
 </project>
