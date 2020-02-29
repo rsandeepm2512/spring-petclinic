@@ -1,10 +1,16 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
-<html lang="en" xmlns:th="http://thymleaf.org">
+<html lang="en" xmlns:th="http://thymleaf.org"
+	th:replace="~{fragments/layout :: layout (~{::body},'home')}">
 	<head>
 		<meta charset="UTF-8">
 		<title>Pet Clinic Index</title>
 	</head>
 	<body>
-		<h1 th:text="'Index Page'">Index Page</h1>
+		<h2 th:text="#{welcome}">Welcome</h2>
+		<div class="row">
+			<div class="col-md-12">
+				<img class="img-responsive" src="../static/resources/images/pets.png" th:src="@{/resources/images/pets.png}" />
+			</div>
+		</div>
 	</body>
 </html>
