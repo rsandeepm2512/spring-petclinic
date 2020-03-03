@@ -8,7 +8,7 @@ import com.mylearning.springpetclinic.model.Specialty;
 import com.mylearning.springpetclinic.services.SpecialtyService;
 
 @Service
-public class SpecialtyServiceMap extends AbstractMapService<Specialty, Long> implements SpecialtyService {
+public class SpecialtyMapService extends AbstractMapService<Specialty, Long> implements SpecialtyService {
 
 	@Override
 	public Set<Specialty> findAll() {
