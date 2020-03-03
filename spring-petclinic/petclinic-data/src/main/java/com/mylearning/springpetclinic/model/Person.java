@@ -1,8 +1,16 @@
 package com.mylearning.springpetclinic.model;
 
+import javax.persistence.Column;
+import javax.persistence.MappedSuperclass;
+
+@MappedSuperclass
 public class Person extends BaseEntity {
 
+	private static final long serialVersionUID = 4868450329459114329L;
+	
+	@Column(name = "first_name")
 	private String firstName;
+	@Column(name = "last_name")
 	private String lastName;
 	
 	public Person() { }
