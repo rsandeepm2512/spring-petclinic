@@ -12,7 +12,6 @@ import com.mylearning.springpetclinic.model.Specialty;
 import com.mylearning.springpetclinic.model.Vet;
 import com.mylearning.springpetclinic.model.Visit;
 import com.mylearning.springpetclinic.services.OwnerService;
-import com.mylearning.springpetclinic.services.PetService;
 import com.mylearning.springpetclinic.services.PetTypeService;
 import com.mylearning.springpetclinic.services.SpecialtyService;
 import com.mylearning.springpetclinic.services.VetService;
